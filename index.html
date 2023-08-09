@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruit burst landing page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style> 
+font-family{
+     lato;
+}
+</style>
+</head>
+<body>
+  
+ <div class="container px-40 py-12"> 
+     <header> 
+          <nav>
+               
+                    <div class="navbar py-4 rounded-full space-x-12  p-9 bg-red-500">
+                         <div class="flex-1">
+                          <ul class="flex space-x-8 text-base text-white sm:hidden md:hidden">
+                              <li>Home</li>
+                              <li>About Us</li>
+                              <li>Shop</li>
+                              <li>All Fruits</li>
+                          </ul>
+                         </div>
+                              <div>
+                                   <img src="images/logo.png" alt="">
+                                   <h1 class=" text-white text-4xl "> Fruit Burst</h1>
+                              </div>
+                         <div class="flex-none gap-2">
+                           <div class="form-control">
+                             <input type="text" placeholder="Search"
+                              class="input input-bordered w-24 md:w-auto" />
+                           </div>
+                          
+                         </div>
+                    </div>
+           </nav>
+     </header>
+     
+     <main>
+          <div class="carousel w-full sm:py-2 py-5">
+               <div id="slide1" class="carousel-item relative w-full bg-slate-900 hover:bg-slate-900">
+                    <img src="/images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <div> 
+                            <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
+                            <p class="text-white text-l">We supply highly quality organic products</p>
+                            <button class="btn bg-red-500 items-center px-l10">shop now</button>
+                      </div>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+
+                    </div>
+               </div> 
+               <div id="slide2" class="carousel-item relative w-full bg-gradient-to-t from bg-slate-800 to bg-slate-600 hover:bg-slate-900">
+                 <img src="/images/banner2.png" class="w-full" />
+                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                   <a href="#slide1" class="btn btn-circle">❮</a> 
+                 <div> 
+                    <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
+                    <p class="text-white text-l">We supply highly quality organic products</p>
+                    <button class="btn">Button</button>
+              </div>
+                   <a href="#slide3" class="btn btn-circle">❯</a>
+                 </div>
+               </div> 
+
+               <div id="slide3" class="carousel-item relative w-full  bg-slate-900 hover:bg-slate-900">
+                 <img src="/images/banner3.png" class="w-full" />
+                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                   <a href="#slide2" class="btn btn-circle">❮</a> 
+                   <div> 
+                    <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
+                    <p class="text-white text-l">We supply highly quality organic products</p>
+              </div>
+                   <a href="#slide4" class="btn btn-circle">❯</a>
+                 </div>
+               </div> 
+
+               <div id="slide4" class="carousel-item relative w-full  bg-slate-900 hover:bg-slate-950">
+                 <img src="/images/banner4.png" class="w-full" />
+                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                   <a href="#slide3" class="btn btn-circle">❮</a> 
+                   <div> 
+                    <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
+                    <p class="text-white text-l">We supply highly quality organic products</p>
+              </div>
+                   <a href="#slide1" class="btn btn-circle">❯</a>
+                 </div>
+               </div>
+           </div>
+           <!-- masking -->
+           <div>
+            <ul class="flex bg-gray-200 px-20 mx-12">
+              <li><img src="images/fruit1.png" alt="">strawberry</li>
+              <li><img src="images/fruit2.png" alt="">orange</li>
+              <li><img src="images/fruit3.png" alt="">mango</li>
+              <li class="bg-secondary-600"><img src="images/fruit4.png" alt="">strawberry</li>
+              <li><img src="images/fruit5.png" alt="">mango</li>
+            </ul>
+         </div>
+         <!-- deal of the day -->
+         <section>
+            <h1> Deal of the day</h1>
+            <p> Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+               Latin literature from 45 BC, making it over 2000 years old.</p>
+            <span class="countdown font-mono text-2xl">
+              <span style="--value:10;"></span>:
+              <span style="--value:24;"></span>:
+              <span style="--value:4;"></span>
+            </span>
+         </section>
+        
+
+
+     </main>
+</div>
+     <footer>
+
+     </footer>
+</body>
+</html>
