@@ -56,8 +56,10 @@
                         <a href="#slide4" class="btn btn-circle">❮</a> 
                         <div> 
                             <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
-                            <p class="text-white text-l">We supply highly quality organic products</p>
-                            <button class="btn bg-red-500  px-l10">shop now</button>
+                            <p class="text-white text-l pb-4">We supply highly quality organic products</p>
+                            <button class="btn bg-red-500  px-l10 ml-5 invisible ">shop now</button>
+                            <button class="btn bg-red-500  px-l10 ml-2 ">shop now</button>
+                           
                       </div>
                         <a href="#slide2" class="btn btn-circle">❯</a>
 
@@ -69,8 +71,9 @@
                    <a href="#slide1" class="btn btn-circle">❮</a> 
                  <div> 
                     <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
-                    <p class="text-white text-l">We supply highly quality organic products</p>
-                    <button class="btn bg-red-500  px-l10">shop now</button>
+                    <p class="text-white text-l pb-4">We supply highly quality organic products</p>
+                    <button class="btn bg-red-500  px-l10 ml-5 invisible ">shop now</button>
+                    <button class="btn bg-red-500  px-l10 ml-2 ">shop now</button>
                   
                     
               </div>
@@ -84,8 +87,9 @@
                    <a href="#slide2" class="btn btn-circle">❮</a> 
                    <div> 
                     <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
-                    <p class="text-white text-l">We supply highly quality organic products</p>
-                    <button class="btn bg-red-500  px-l10">shop now</button>
+                    <p class="text-white text-l pb-4">We supply highly quality organic products</p>
+                    <button class="btn bg-red-500  px-l10 ml-5 invisible ">shop now</button>
+                    <button class="btn bg-red-500  px-l10 ml-2 ">shop now</button>
               </div>
                    <a href="#slide4" class="btn btn-circle">❯</a>
                  </div>
@@ -97,15 +101,16 @@
                    <a href="#slide3" class="btn btn-circle">❮</a> 
                    <div> 
                     <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
-                    <p class="text-white text-l">We supply highly quality organic products</p>
-                    <button class="btn bg-red-500  px-l10">shop now</button>
+                    <p class="text-white text-l pb-4">We supply highly quality organic products</p>
+                    <button class="btn bg-red-500  px-l10 ml-5 invisible ">shop now</button>
+                    <button class="btn bg-red-500  px-l10 ml-2 ">shop now</button>
               </div>
                    <a href="#slide1" class="btn btn-circle">❯</a>
                  </div>
                </div>
            </div>
            <!-- masking -->
-           <div>
+           <div class="relative bottom-14">
             <ul class="flex bg-base-100 shadow-xl px-20 mx-12 md:px-8">
               <li><img src="images/fruit1.png" alt="">strawberry</li>
               <li><img src="images/fruit2.png" alt="">orange</li>
@@ -116,7 +121,7 @@
          </div>
          <!-- deal of the day -->
          <section >
-          <div class="flex py-14 pt-px-5 "> 
+          <div class="flex grid grid-cols-1-reverse  md:grid-cols-2 lg:flex py-14 pt-px-5 "> 
              <div > 
                 <h1 class="text-black text-5xl"> Deal of the day</h1>
                 <p class="text-base text-inherit"> Contrary to popular belief, is not simply random text. <br>
@@ -126,7 +131,7 @@
               </div> 
               <!-- cowndown section -->
               <div> 
-              <div class="flex gap-5 justify-end pl-20 ml-12">
+              <div class="flex gap-5 justify-end pl-20 ml-12 ">
                 <div>
                   <span class="countdown font-mono text-4xl ">
                     <span style="--value:15;"></span>
@@ -157,20 +162,18 @@
          </section>
          <!-- cardc section -->
     <section class="py-8">
-    <div class="flex md:grid grid-cols-2 lg:flex"> 
+    <div class="flex grid grid-cols-1 md:grid-cols-2 lg:flex"> 
       <div class="card w-80  bg-base-100 shadow-xl">
         <figure class="px-8 pt-9 md:px-6 pt-7">
-          
+          <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-        
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          <p>apples</p>
           
           <!-- Open the modal using ID.showModal() method -->
-          <button class="btn" onclick="my_modal_1.showModal()"><img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
-  <h2 class="card-title">12.90$ - 18.85$</h2>
-
-
-   <div class="rating rating-lg rating-half">
+         
+ <div class="rating rating-lg rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
@@ -183,16 +186,38 @@
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
-            <p class="text-red-500 font-bold">Details</p>
-            </button>
+            
+              <button class="ml-12" onclick="my_modal_1.showModal()"><p><p class="text-red-500 font-bold">Details </p>
+              </button>
+          
+            
 <dialog id="my_modal_1" class="modal">
   <form method="dialog" class="modal-box">
     <img src="images/fruit6.png" alt="">
-  
-    <p class="py-4">Press ESC key or click the button below to close</p>
+    <h1 class="text-4xl"> Apples</h1>
+    <p>Professional employees are there for you to pick the most <br>
+       amazing and fresh fruits.</p>
+
+       <div class="rating rating-lg rating-half">
+        <input type="radio" name="rating-10" class="rating-hidden" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+      </div>
+    
+
+
     <div class="modal-action">
       <!-- if there is a button in form, it will close the modal -->
       <button class="btn">Close</button>
+      <button class="btn  bg-red-500">buy now </button>
     </div>
   </form>
 </dialog>
@@ -205,9 +230,13 @@
         <figure class="px-8 pt-9">
           <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
         </figure>
+     
+        <div class="ml-14 mt-10"> 
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Orange</p>
+          </div>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">12.90$ - 18.85$</h2>
-          <p>Orange</p>
+        
             <div class="rating rating-lg rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
@@ -221,7 +250,24 @@
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
-            <p class="text-red-500 font-bold">Details</p>
+            
+              <button class="ml-12" onclick="my_modal_1.showModal()"><p><p class="text-red-500 font-bold">Details </p>
+              </button>
+          
+            <dialog id="my_modal_2" class="modal2">
+              <form method="dialog" class="modal-box">
+                <img src="/images/fruit7.png" alt="" class="rounded-xl" />
+                <!-- <img src="images/fruit7.png" alt=""> -->
+              <h1> Apples</h1>
+                <p>Professional employees are there for you to pick the most <br>
+                   amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </div>
+              </form>
+            </dialog>
+            
         </div>
       </div>
 
@@ -245,7 +291,8 @@
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
-            <p class="text-red-500 font-bold">Details</p>
+            <button class="ml-12" onclick="my_modal_1.showModal()"><p><p class="text-red-500 font-bold">Details </p>
+            </button>
         </div>
       </div>
 
@@ -269,7 +316,8 @@
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
-            <p class="text-red-500 font-bold">Details</p>
+            <button class="ml-12" onclick="my_modal_1.showModal()"><p><p class="text-red-500 font-bold">Details </p>
+            </button>
         </div>
       </div>
 
@@ -283,7 +331,7 @@
     </section>
 
     <!-- meet the team section -->
-  <section class="py-12">
+  <section class="py-12 ">
 
     <div class="w-full h-screen bg-slate-500 hover:bg-slate-700"
      style="background-image: url('images/banner1.png')"> 
@@ -294,7 +342,7 @@
          Latin literature from 45 BC, making it over 2000 years old.</p>
      </div>
      <!-- members div -->
-     <div class="flex justify-center  gap-x-7  "> 
+     <div class="flex justify-center  gap-x-7 grid grid-cols-1 lg:flex "> 
          <div>
             <img src="images/member1.png" alt="">
             <h1 class="text-2xl text-white">Awlad Hossain</h1>
@@ -358,7 +406,7 @@
  
 
   <section class="py-8">
-    <div>
+    <div class="grid grid-cols-1 ">
         <h1 class="text-5xl text-center"> Why Choose Us</h1>
         <p class="text-center mb-8 py-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
            Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -367,8 +415,8 @@
 <div class="flex"> 
 <div> 
 <div>
-    <ul>
-      <div class="flex space-x-5"> 
+    <ul class="grid grid-cols-1">
+      <div class="flex space-x-5 "> 
         <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/group 1.png" alt=""></li>
           <h1 class="text-2xl font-extrabold "> Dedicated Team</h1> 
       </div> 
@@ -378,8 +426,8 @@
   </div>
 
   <div>
-    <ul>
-      <div class="flex space-x-5"> 
+    <ul class="grid grid-cols-1">
+      <div class="flex space-x-5 "> 
         <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/love 1.png" alt=""></li>
           <h1 class="text-2xl font-extrabold">Dedicated Team</h1> 
       </div> 
@@ -389,8 +437,8 @@
   </div>
 
   <div>
-    <ul>
-      <div class="flex space-x-5"> 
+    <ul class="grid grid-cols-1">
+      <div class="flex space-x-5 "> 
         <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/gift-box 1.png" alt=""></li>
           <h1 class="text-2xl font-extrabold">Dedicated Team</h1> 
       </div> 
@@ -403,7 +451,7 @@
 <!-- dedecated main -->
 <div> 
   <div>
-      <ul class="gap-3">
+      <ul class="gap-3 grid grid-cols-1">
         <div class="flex space-x-5 flex-row-reverse"> 
           <li class="px-4 bg-slate-300 rounded-full py-4 "> <img src="images/fruit 1.png" alt=""></li>
             <h1 class="text-2xl font-extrabold text-right px-4">Dedicated Team</h1> 
@@ -415,7 +463,7 @@
     </div>
 
     <div>
-      <ul>
+      <ul class="grid grid-cols-1">
         <div class="flex space-x-5 flex-row-reverse"> 
           <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/ice-cream 1.png" alt=""></li>
             <h1 class="text-2xl font-extrabold">Dedicated Team</h1> 
@@ -426,7 +474,7 @@
     </div>
   
     <div>
-      <ul>
+      <ul class="grid grid-cols-1">
         <div class="flex space-x-5 flex-row-reverse"> 
           <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/like 1.png" alt=""></li>
             <h1 class="text-2xl font-extrabold">Dedicated Team</h1> 
