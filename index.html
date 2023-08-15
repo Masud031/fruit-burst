@@ -10,9 +10,10 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
 <style> 
-font-family{
-     lato;
+.lato{
+  font-family: 'Lato', sans-serif;
 }
 </style>
 </head>
@@ -24,7 +25,7 @@ font-family{
                
                     <div class="navbar py-4 rounded-full space-x-12  p-9 bg-red-500">
                          <div class="flex-1">
-                          <ul class="flex space-x-8 text-base text-white sm:hidden md:hidden">
+                          <ul class="flex space-x-8 text-base text-white ">
                               <li>Home</li>
                               <li>About Us</li>
                               <li>Shop</li>
@@ -56,7 +57,7 @@ font-family{
                         <div> 
                             <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
                             <p class="text-white text-l">We supply highly quality organic products</p>
-                            <button class="btn bg-red-500 items-center px-l10">shop now</button>
+                            <button class="btn bg-red-500  px-l10">shop now</button>
                       </div>
                         <a href="#slide2" class="btn btn-circle">❯</a>
 
@@ -69,7 +70,9 @@ font-family{
                  <div> 
                     <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
                     <p class="text-white text-l">We supply highly quality organic products</p>
-                    <button class="btn">Button</button>
+                    <button class="btn bg-red-500  px-l10">shop now</button>
+                  
+                    
               </div>
                    <a href="#slide3" class="btn btn-circle">❯</a>
                  </div>
@@ -82,6 +85,7 @@ font-family{
                    <div> 
                     <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
                     <p class="text-white text-l">We supply highly quality organic products</p>
+                    <button class="btn bg-red-500  px-l10">shop now</button>
               </div>
                    <a href="#slide4" class="btn btn-circle">❯</a>
                  </div>
@@ -94,6 +98,7 @@ font-family{
                    <div> 
                     <h1 class="text-white text-4xl text-center"> Exotic tastes at your <br>doorstep</h1>
                     <p class="text-white text-l">We supply highly quality organic products</p>
+                    <button class="btn bg-red-500  px-l10">shop now</button>
               </div>
                    <a href="#slide1" class="btn btn-circle">❯</a>
                  </div>
@@ -110,31 +115,62 @@ font-family{
             </ul>
          </div>
          <!-- deal of the day -->
-         <section>
-          <div class="flex py-14 pt-px-5"> 
-             <div> 
+         <section >
+          <div class="flex py-14 pt-px-5 "> 
+             <div > 
                 <h1 class="text-black text-5xl"> Deal of the day</h1>
-                <p class="text-base text-inherit"> Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
-                  Latin literature from 45 BC, making it over 2000 years old.</p>
-              </div>  
-                  <span class="countdown font-mono text-2xl px-14 mx-8">
-                  <span style="--value:10;"></span>:
-                  <span style="--value:24;"></span>:
-                  <span style="--value:4;"></span>
-                </span>
+                <p class="text-base text-inherit"> Contrary to popular belief, is not simply random text. <br>
+                  It has roots in a piece of classical 
+                  Latin literature <br>
+                   from 45 BC, making it over 2000 years old.</p>
+              </div> 
+              <!-- cowndown section -->
+              <div> 
+              <div class="flex gap-5 justify-end pl-20 ml-12">
+                <div>
+                  <span class="countdown font-mono text-4xl ">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:29;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+            </div> 
           </div>
          </section>
          <!-- cardc section -->
-    <section>
-    <div class="flex"> 
-      <div class="card w-80 bg-base-100 shadow-xl">
-        <figure class="px-8 pt-9">
-          <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+    <section class="py-8">
+    <div class="flex md:grid grid-cols-2 lg:flex"> 
+      <div class="card w-80  bg-base-100 shadow-xl">
+        <figure class="px-8 pt-9 md:px-6 pt-7">
+          
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">12.90$ - 18.85$</h2>
-          <p>Apples</p>
-            <div class="rating rating-lg rating-half">
+        
+          
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="btn" onclick="my_modal_1.showModal()"><img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+  <h2 class="card-title">12.90$ - 18.85$</h2>
+
+
+   <div class="rating rating-lg rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
@@ -148,6 +184,20 @@ font-family{
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
             <p class="text-red-500 font-bold">Details</p>
+            </button>
+<dialog id="my_modal_1" class="modal">
+  <form method="dialog" class="modal-box">
+    <img src="images/fruit6.png" alt="">
+  
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
+         
+            
         </div>
       </div>
 
@@ -171,6 +221,7 @@ font-family{
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
+            <p class="text-red-500 font-bold">Details</p>
         </div>
       </div>
 
@@ -194,6 +245,7 @@ font-family{
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
+            <p class="text-red-500 font-bold">Details</p>
         </div>
       </div>
 
@@ -217,23 +269,210 @@ font-family{
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
             </div>
+            <p class="text-red-500 font-bold">Details</p>
         </div>
       </div>
 
           
      
     </div> 
-   <div class="justify-between"> 
-    <button class="btn bg-red-500 items-center px-l10 text-white">shop All</button>
-  </div>
-    </section>
-        
 
+        <div class="pl-80 pt-11 ml-20"> 
+          <button class="btn bg-red-500  px-l10 text-white">shop All</button>
+        </div>
+    </section>
+
+    <!-- meet the team section -->
+  <section class="py-12">
+
+    <div class="w-full h-screen bg-slate-500 hover:bg-slate-700"
+     style="background-image: url('images/banner1.png')"> 
+  
+      <div class="text-center py-36 relative"> 
+          <h1 class="text-5xl text-white"> Meet the team section</h1>
+          <p class="text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+         Latin literature from 45 BC, making it over 2000 years old.</p>
+     </div>
+     <!-- members div -->
+     <div class="flex justify-center  gap-x-7  "> 
+         <div>
+            <img src="images/member1.png" alt="">
+            <h1 class="text-2xl text-white">Awlad Hossain</h1>
+            <p class="text-lg text-white">Fruits Expert</p>
+              <div> 
+                <ul class="flex space-x-2">
+                  <li><img src="images/facebook 1 (1).png" alt=""></li>
+                  <li><img src="images/twitter (1) 1.png" alt=""></li>
+                  <li><img src="images/linkedin 1 (1).png" alt=""></li>
+                </ul>
+              </div>
+         </div>
+
+
+       <div>
+          <img src="images/member2.png" alt="">
+          <h1 class="text-2xl text-white">Safia Chowdhury</h1>
+          <p class="text-lg text-white">Fruits Expert</p>
+            <div> 
+              <ul class="flex space-x-2">
+                <li><img src="images/facebook 1 (1).png" alt=""></li>
+                <li><img src="images/twitter (1) 1.png" alt=""></li>
+                <li><img src="images/linkedin 1 (1).png" alt=""></li>
+              </ul>
+            </div>
+       </div>
+
+
+       <div>
+        <img src="images/member3.png" alt="">
+        <h1 class="text-2xl text-white">Rokib Hossain</h1>
+        <p class="text-lg text-white">Fruits Expert</p>
+          <div> 
+            <ul class="flex space-x-2">
+              <li><img src="images/facebook 1 (1).png" alt=""></li>
+              <li><img src="images/twitter (1) 1.png" alt=""></li>
+              <li><img src="images/linkedin 1 (1).png" alt=""></li>
+            </ul>
+          </div>
+     </div>
+
+
+     <div>
+      <img src="images/member4.png" alt="">
+      <h1 class="text-2xl text-white">Chaity</h1>
+      <p class="text-lg text-white">Fruits Expert</p>
+        <div> 
+          <ul class="flex space-x-2">
+            <li><img src="images/facebook 1 (1).png" alt=""></li>
+            <li><img src="images/twitter (1) 1.png" alt=""></li>
+            <li><img src="images/linkedin 1 (1).png" alt=""></li>
+          </ul>
+        </div>
+   </div>
+  
+  </div> 
+
+    </div>
+  </section>
+
+ 
+
+  <section class="py-8">
+    <div>
+        <h1 class="text-5xl text-center"> Why Choose Us</h1>
+        <p class="text-center mb-8 py-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+           Latin literature from 45 BC, making it over 2000 years old.</p>
+    </div>
+    <!-- dedicated team -->
+<div class="flex"> 
+<div> 
+<div>
+    <ul>
+      <div class="flex space-x-5"> 
+        <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/group 1.png" alt=""></li>
+          <h1 class="text-2xl font-extrabold "> Dedicated Team</h1> 
+      </div> 
+          <p class=" text-base px-14">Professional employees are there for you to pick <br>
+          the most amazing and fresh fruits.</p>
+    </ul>
+  </div>
+
+  <div>
+    <ul>
+      <div class="flex space-x-5"> 
+        <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/love 1.png" alt=""></li>
+          <h1 class="text-2xl font-extrabold">Dedicated Team</h1> 
+      </div> 
+          <p class=" text-base px-14">Professional employees are there for you to pick <br>
+          the most amazing and fresh fruits.</p>
+    </ul>
+  </div>
+
+  <div>
+    <ul>
+      <div class="flex space-x-5"> 
+        <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/gift-box 1.png" alt=""></li>
+          <h1 class="text-2xl font-extrabold">Dedicated Team</h1> 
+      </div> 
+          <p class=" text-base px-14">Professional employees are there for you to pick <br>
+          the most amazing and fresh fruits.</p>
+    </ul>
+  </div>
+</div>
+ <div class="w-100% h-120"> <img src="images/whychoose1.png" alt=""></div>
+<!-- dedecated main -->
+<div> 
+  <div>
+      <ul class="gap-3">
+        <div class="flex space-x-5 flex-row-reverse"> 
+          <li class="px-4 bg-slate-300 rounded-full py-4 "> <img src="images/fruit 1.png" alt=""></li>
+            <h1 class="text-2xl font-extrabold text-right px-4">Dedicated Team</h1> 
+        </div> 
+            <p class=" text-base px-14 text-right pb-4">Professional employees are there for you to pick <br>
+            the most amazing and fresh fruits.</p>
+
+      </ul>
+    </div>
+
+    <div>
+      <ul>
+        <div class="flex space-x-5 flex-row-reverse"> 
+          <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/ice-cream 1.png" alt=""></li>
+            <h1 class="text-2xl font-extrabold">Dedicated Team</h1> 
+        </div> 
+            <p class=" text-base px-14 text-right">Professional employees are there for you to pick <br>
+            the most amazing and fresh fruits.</p>
+      </ul>
+    </div>
+  
+    <div>
+      <ul>
+        <div class="flex space-x-5 flex-row-reverse"> 
+          <li class="px-4 bg-slate-300 rounded-full py-4"> <img src="images/like 1.png" alt=""></li>
+            <h1 class="text-2xl font-extrabold">Dedicated Team</h1> 
+        </div> 
+            <p class=" text-base px-14 text-right">Professional employees are there for you to pick <br>
+            the most amazing and fresh fruits.</p>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+
+  </section>
 
      </main>
 </div>
      <footer>
+      <section class="  bg-black pb-20">
+        <div class="flex  justify-center pt-20">
+          <img src="images/logo.png" alt="">
+          <h1 class="text-4xl text-white ">Fruit Burst</h1>
+        </div>
 
+        <div >
+            <ul class="flex text-white space-x-8 justify-center pt-5">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Shop</li>
+              <li>All Fruits</li>
+              <li>Support</li>
+              <li>My Account</li>
+            </ul>
+        </div>
+    <div>
+        <ul class="flex space-x-6 justify-center pt-7">
+          <li><img src="images/twitter (1) 1.png" alt=""></li>
+          <li><img src="images/facebook 1 (1).png" alt=""></li>
+          <li><img src="images/linkedin 1 (1).png" alt=""></li>
+          <li><img src="images/twitter (1) 1.png" alt=""></li>
+          <li><img src="images/facebook 1 (1).png" alt=""></li>
+          <li><img src="images/linkedin 1 (1).png" alt=""></li>
+        </ul>
+    </div>
+   
+      </section>
      </footer>
 </body>
 </html>
+
